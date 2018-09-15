@@ -1,8 +1,7 @@
 import express from 'express';
 import webpack from 'webpack';
 import path from 'path';
-import config from '../webpack.config.dev';
-import open from 'open';
+import config from '../webpack.config.dev'; 
 
 /* eslint-disable no-console */
 
@@ -25,6 +24,6 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open(`http://localhost:${port}`);
+    console.log(`App is ready: http://localhost:${port}`);
   }
 });
